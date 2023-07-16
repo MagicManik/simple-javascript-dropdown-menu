@@ -1,0 +1,187 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h3 {
+  font-weight: 700;
+}
+
+nav button:hover {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.banner {
+  background-image: url("../images/pk_1.jpg");
+  background-position: center 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 650px;
+}
+
+.tabs {
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(20px);
+}
+
+.tabs li {
+  padding: 1rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.tabs li.active {
+  background-color: #fff;
+  color: #1d1d1d;
+}
+
+.tabs-2 li {
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.tabs-2 li.active {
+  background-color: #e7fddc;
+  color: #188920;
+}
+
+#flights #add-flight {
+  color: #29c633;
+  font-weight: 500;
+}
+
+#flights #add-flight:hover {
+  background-color: #e7fddc !important;
+}
+
+.search-input input {
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.search-input input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: #188920 !important;
+}
+
+.search-input .input-group-text {
+  color: #aeaeae;
+}
+
+.flight-only input {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+.search-box .select:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.select-options {
+  transition: all 0.1s ease;
+}
+
+.plusBtn,
+.minusBtn {
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 0;
+  display: grid;
+  place-content: center;
+  border-radius: 0.3rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #29c633;
+}
+
+.plusBtn:hover,
+.minusBtn:hover {
+  background-color: #21a129;
+}
+
+#typeLists li {
+  cursor: pointer;
+}
+
+#typeLists li:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+#multi-city .closeBtn,
+#multi-city .closeBtn:disabled:hover {
+  border: none;
+  color: #7e7e7e;
+  background-color: inherit;
+  font-size: 1.5rem;
+}
+
+#multi-city .closeBtn:hover {
+  color: #363636;
+}
+
+#multi-city .closeBtn:disabled {
+  opacity: 0.5;
+}
+
+.swiper {
+  width: 100%;
+  height: fit-content;
+}
+
+.swiper-slide .card {
+  border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.auto-suggestions {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.auto-suggestions li {
+  padding: 8px 1rem;
+}
+
+.auto-suggestions li:hover {
+  background-color: #e7fddc;
+}
+
+/* toggle location button */
+
+.rotate-90 {
+  animation-name: rotate-90;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.rotate-0 {
+  animation-name: rotate-0;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotate-90 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes rotate-0 {
+  0% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
