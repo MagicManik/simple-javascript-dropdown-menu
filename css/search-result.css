@@ -108,17 +108,32 @@ body {
     padding-bottom: 75px
 }
 
+.total-result {
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
 .hide-unhide-btn {
     color: #333;
     font-size: 15px;
     font-weight: 500;
-    padding: 16px 0;
+    padding: 17px 0;
+    border: 0;
+    border-top: 1px solid #e3e3e3;
+    background-color: transparent;
+}
+
+.arraival-tieme {
+    font-size: 14px;
+    padding: 17px 0;
+    border: 0;
+    background-color: transparent;
 }
 
 .show-more-less-btn {
     font-size: 14px;
-    margin: 0 28px;
-    padding: 0;
+    padding: 10px 20px;
+    text-align: left;
 }
 
 .show-more-less-btn,
@@ -133,16 +148,9 @@ body {
     color: rgb(20, 20, 20);
 }
 
-/* search result || left box style */
-.results-container {
-    position: relative;
-    min-height: inherit;
-    padding: 0 16px 24px;
-}
 
-.result-container-list {
-    width: 742px;
-}
+
+
 
 .sortbar {
     list-style: none;
@@ -185,6 +193,40 @@ body {
     border-bottom: 2px solid transparent;
 }
 
+/* ----------------- */
+.flight-sort:hover {
+    background: #f5f5f5;
+}
+
+.flight-sort>li:focus {
+    background: #fafafa;
+}
+
+.flight-sort>li {
+    /* ekhane problem hote pare */
+    position: relative;
+    width: 25%;
+    max-height: 60px;
+    border-right: 1px solid #d8d8d8;
+    display: flex;
+    padding: .7em .5em .9em;
+    font-weight: 500;
+    color: #555;
+    background: #fefefe;
+    line-height: 1.285714286;
+    cursor: pointer;
+    outline: 0;
+}
+
+.flight-sort>li:last-child {
+    border-right: 0;
+}
+
+.flight-sort>li {
+    border-bottom: 2px solid transparent;
+}
+
+/* sortbar */
 .sortbar>li>i {
     margin-right: 8px;
     flex-shrink: 0;
@@ -204,11 +246,35 @@ body {
     color: rgb(20, 20, 20);
 }
 
-/* .airline {
-    display: flex;
-    flex: 0 0 41%;
-    width: 41%;
-} */
+/* search result card*/
+.results-container {
+    position: relative;
+    min-height: inherit;
+    padding: 0 16px 24px;
+}
+
+.result-container-list {
+    width: 742px;
+}
+
+/* filter's dropdown */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
+.rotate {
+    rotate: 180deg;
+}
 
 .result-card-wrapper {
     border: 1px solid #ddd;
@@ -264,7 +330,7 @@ body {
     border: 2px solid #9b9b9b;
 }
 
-/* divider line */
+/* divider line 2 */
 .line-2 {
     position: relative;
     height: 2px;
@@ -398,9 +464,6 @@ body {
 #custom-offcanvas-header>button {
     color: white !important;
 }
-
-
-
 
 @media screen and (max-width: 1279px) {
     .result-container-list {

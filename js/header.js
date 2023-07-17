@@ -1,11 +1,9 @@
 // Get all the dropdowns on the page
-const dropdowns = document.querySelectorAll(".dropdown");
+const navDropdowns = document.querySelectorAll(".nav-dropdown");
 
-// Add event listeners to toggle the dropdowns
-dropdowns.forEach((dropdown) => {
-    const dropdownBtn = dropdown.querySelector(".dropdown-btn");
+navDropdowns.forEach((dropdown) => {
+    const dropdownBtn = dropdown.querySelector(".nav-dropdown-btn");
     const dropdownContent = dropdown.querySelector(".dropdown-content");
-
     // Check if dropdownBtn and dropdownContent exist before adding event listeners
     if (dropdownBtn && dropdownContent) {
         dropdownBtn.addEventListener("click", function () {
